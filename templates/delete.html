@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Delete Page
+{%endblock title%}
+
+{% block content%}
+<h1><a href="{% url 'home'%}"> ToDo Blog</a></h1>
+<h1><a href="{% url 'todo_new' %}"> + new list</a></h1>
+
+<form method="post">
+    {% csrf_token %}
+    <p>Are you want to delete?</p>
+    <input type="submit" value="delete">
+</form>
+
+{% endblock content%}

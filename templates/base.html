@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo Blog</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ǓǏǏ"
+rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <h1><a href="{% url 'home'%}"> ToDo Technology </a></h1>
+        </div>
+
+        <div>
+            <h1><a href="{% url 'todo_new' %}"> Create blog</a></h1>
+        </div>
+    </header>
+
+   
+        {% block content %}
+        {% endblock %}
+    
+
+    <footer>
+        <h1><a href="{% url 'home'%}"> </a></h1>
+    </footer>
+
+</body>
+</html>

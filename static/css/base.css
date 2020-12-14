@@ -1,0 +1,60 @@
+header h1 a {
+
+    color: green;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+.todo {
+    display:flex;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    }
+  }
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    }
+
+header {
+    border-bottom: 2px solid ;
+    margin-bottom: 3rem;
+    display: flex;  
+    }
+
+header h1 a {
+    color: blue;
+    text-decoration: none;
+    }
+
+.nav-left {
+    margin-right: auto;
+    }
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+    }
+.post-entry h2 a:hover {
+    color: red;
+    }
+
+footer {
+    background-color: black;
+    padding: 40px;
+    background-image: url(../image/foto.jpg);
+ }
+
+footer h1 a {
+    color: yellow;
+    text-decoration: none;
+    }
